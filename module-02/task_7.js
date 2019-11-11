@@ -2,7 +2,7 @@
 
 // const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
-// //const login = prompt("Введите пароль");
+// //const login = prompt("Введите логин");
 
 // const isLoginValid = login => {
 //   return login.length >= 4 && login.length <= 16;
@@ -27,7 +27,7 @@
 //   }
 // };
 
-// //addLogin(logins, login);
+//addLogin(logins, login);
 
 // addLogin(logins, "Ajax"); // 'Логин успешно добавлен!'
 // addLogin(logins, "robotGoogles"); // 'Такой логин уже используется!'

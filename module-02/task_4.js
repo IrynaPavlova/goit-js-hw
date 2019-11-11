@@ -1,13 +1,7 @@
 // "use strict";
 
-// const formatString = (string) => {
-//   let trimmedString = null;
-//   if (string.length > 40) {
-//     trimmedString = string.slice(0, 40) + "...";
-//   } else {
-//     trimmedString = string;
-//   }
-//   return trimmedString;
+// const formatString = string => {
+//   return string.length > 40 ? string.slice(0, 40) + "..." : string;
 // };
 
 // console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
