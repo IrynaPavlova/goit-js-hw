@@ -13,6 +13,6 @@
 
 // const keys = Object.keys(user);
 
-// for (const key in user) {
+// for (const key of keys) {
 //   console.log(`${key}:`, user[key]);
 // }
