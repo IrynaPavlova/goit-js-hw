@@ -95,14 +95,13 @@ import users from "./module.js";
 /*-------------------TASK#9-------------------*/
 
 // const getNamesSortedByFriendsCount = users => {
-//  const sortedUsers = [...users].sort((userA, userB) => {
-//    userA.friends - userB.friends;
-//   }).map(user => user.name);
-//   return sortedUsers;
+//     const sortByFriends = (userA, userB) => userA.friends.length - userB.friends.length;
+//     const sortedUsers = users.sort(sortByFriends).map(user => user.name);
+//      return sortedUsers;
 // };
 
 // console.log(getNamesSortedByFriendsCount(users));
-// //[ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
+//[ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 
 /*-------------------TASK#10------------------*/
 
