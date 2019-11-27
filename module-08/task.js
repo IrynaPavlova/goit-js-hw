@@ -31,7 +31,7 @@ refs.gallery.addEventListener("click", event => {
 
   refs.divModal.classList.add("is-open");
   refs.img.setAttribute("src", event.target.dataset.source);
-  refs.img.setAttribute("alt", event.target.alt);
+  refs.img.setAttribute("alt", event.target.alt); 
 });
 
 refs.divModal.addEventListener("click", () => {
@@ -49,15 +49,17 @@ images.forEach(item => {
   newImages.push(item.original);
 });
 
+
 window.addEventListener("keydown", event => {
   if (event.keyCode === 27) {
     refs.divModal.classList.remove("is-open");
   }
 
   let index = newImages.indexOf(refs.img.src);
+  
 
   if (event.keyCode === 39) {
-    if (index < 8) {
+    if (index < newImages.length - 1) {
       refs.img.setAttribute("src", newImages[index + 1]);
     } else {
       index = -1;
@@ -67,7 +69,7 @@ window.addEventListener("keydown", event => {
 
   if (event.keyCode === 37) {
     if (index === 0) {
-      index = 9;
+      index = newImages.length;
       refs.img.setAttribute("src", newImages[index - 1]);
     } else refs.img.setAttribute("src", newImages[index - 1]);
   }
